@@ -15,12 +15,12 @@ curl -o jetty-all-uber.jar https://repo1.maven.org/maven2/org/eclipse/jetty/aggr
 
 ```
 mkdir classes
-javac -d classes -cp jetty-all-uber.jar HelloWorld.java
+javac -d classes -cp jetty-all-uber.jar WebHookServer.java
 ```
 
 
 ## Run
 
 ```
-java -cp classes:jetty-all-uber.jar com.ringcentral.HelloWorld
+java -cp classes:jetty-all-uber.jar com.ringcentral.WebHookServer
 ```
