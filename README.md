@@ -11,7 +11,12 @@ curl -o jetty-all-uber.jar https://repo1.maven.org/maven2/org/eclipse/jetty/aggr
 ```
 
 
-## Comnpile
+## Write code
+
+Create file `WebHookServer.java` with source code as shown in this project.
+
+
+## Compile
 
 ```
 mkdir classes
