@@ -22,11 +22,9 @@ repositories {
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
-    implementation 'com.google.guava:guava:27.0.1-jre'
-
-    // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    // implementation 'com.google.guava:guava:27.0.1-jre'
+    compile 'com.ringcentral:ringcentral:1.0.0-beta10'
 }
 
 // Define the main class for the application
-mainClassName = 'com.ringcentral.App'
+mainClassName = 'com.ringcentral.SetupWebHook'

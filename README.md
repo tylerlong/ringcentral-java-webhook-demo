@@ -29,27 +29,29 @@ javac -d classes -cp jetty-all-uber.jar WebHookServer.java
 java -cp classes:jetty-all-uber.jar com.ringcentral.WebHookServer
 ```
 
+### Get a public uri
+
+RingCentral WebHook requires a public uri to work. If you don't already have one, you can try [ngrok](https://ngrok.com/download).
+
+We are not going to cover the ngork installation & usage detail, here is the quick command to get started:
+
+```
+ngrok http 8080
+```
+
 
 ## Part 2: Setup WebHook
 
-### Download RingCentral
+### Setup a Gradle project
 
-```
-wget -O ringcentral.jar https://dl.bintray.com/tylerlong/maven/com/ringcentral/ringcentral/1.0.0-beta10/ringcentral-1.0.0-beta10.jar
-```
+We start a Gradle hello world style Java application. If you are not familar with Gradle, please read [its documentation](https://docs.gradle.org/current/userguide/building_java_projects.html#introduction).
 
-### Write code
+Here is the [gradle build file](./build.gradle), and here is the [Java source code](./src/main/java/com/ringcentral/SetupWebHook.java).
 
-Create file `SetupWebHook.java` with source code as shown in this project.
 
-### Compile
-
-```
-javac -d classes -cp ringcentral.jar SetupWebHook.java
-```
 
 ### Run
 
 ```
-java -cp classes:ringcentral.jar com.ringcentral.SetupWebHook
+./gradlew run
 ```

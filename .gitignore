@@ -7,3 +7,5 @@ build
 
 classes/
 *.jar
+
+node_modules/
