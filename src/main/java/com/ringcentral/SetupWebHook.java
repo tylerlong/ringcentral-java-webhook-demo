@@ -20,7 +20,7 @@ public class SetupWebHook
             System.getenv("RINGCENTRAL_EXTENSION"),
             System.getenv("RINGCENTRAL_PASSWORD")
         );
-        String WEBHOOK_ADDRESS = "https://dd56121f.ngrok.io";
+        String WEBHOOK_ADDRESS = "https://ad0324ba.ngrok.io";
         CreateSubscriptionRequest createSubscriptionRequest = new CreateSubscriptionRequest()
             .eventFilters(new String[]{"/restapi/v1.0/account/~/extension/~/message-store/instant?type=SMS"})
             .deliveryMode(new NotificationDeliveryModeRequest().transportType("WebHook").address(WEBHOOK_ADDRESS));

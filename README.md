@@ -55,7 +55,6 @@ Please do remember the replace those environment variables with real values.
 And don't forget to replace `WEBHOOK_ADDRESS` with the ngrok uri we created above.
 
 
-
 ### Run
 
 ```
