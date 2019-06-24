@@ -39,6 +39,8 @@ We are not going to cover the ngork installation & usage detail, here is the qui
 ngrok http 8080
 ```
 
+Please note down the ngork https uri which we will use later, such as `https://xxxxxx.ngrok.io`.
+
 
 ## Part 2: Setup WebHook
 
@@ -48,6 +50,10 @@ We start a Gradle hello world style Java application. If you are not familar wit
 
 Here is the [gradle build file](./build.gradle), and here is the [Java source code](./src/main/java/com/ringcentral/SetupWebHook.java).
 
+Please do remember the replace those environment variables with real values.
+
+And don't forget to replace `WEBHOOK_ADDRESS` with the ngrok uri we created above.
+
 
 
 ### Run
@@ -55,3 +61,8 @@ Here is the [gradle build file](./build.gradle), and here is the [Java source co
 ```
 ./gradlew run
 ```
+
+
+## Part 3: Test
+
+Send an sms to the phone number you used in Part 2. And watch the console of the app we created in Part 1. There should be incoming WebHook notifications.
